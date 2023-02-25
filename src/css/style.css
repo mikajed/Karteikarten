@@ -11,8 +11,12 @@ body {
 }
 
 #main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: fixed;
     top: 20%;
+    align-items: center;
 }
 
 #card {
@@ -25,6 +29,7 @@ body {
     border-radius: 10px;
     background-color: #eeeeee;
     padding: 2rem;
+    margin-bottom: 5rem;
     box-shadow: 0 13px 30px #2e2e2e;
 }
 
@@ -38,4 +43,26 @@ h2 {
 p {
     font-size: 1rem;
     margin-bottom: 1rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+#randomizer{
+    width: 170px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+#arrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
