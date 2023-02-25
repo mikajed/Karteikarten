@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     justify-content: center;
     position: fixed;
-    top: 20%;
+    top: 10%;
     align-items: center;
 }
 
@@ -89,6 +89,8 @@ button {
     display: flex;
     flex-direction: row;
     gap: 2rem;
+    position: fixed;
+    bottom: 2rem;
 }
 
 #randomizer{
