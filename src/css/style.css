@@ -8,6 +8,7 @@ body {
     background-color: #929292;
     display: flex;
     justify-content: center;
+    font-family: 'JetBrains Mono';
 }
 
 .main {
@@ -32,20 +33,18 @@ body {
     margin-bottom: 5rem;
     box-shadow: 0 13px 30px #2e2e2e;
     perspective: 1000px;
+    transition: all 0.5s ease;
 }
 
 .card-inner {
     transition: transform 0.6s;
     height: 100%;
+    transform-style: preserve-3d;
 }
 
 .card-back {
     transform: rotateY(180deg);
 }
-
-.card:hover .card-inner {
-    transform: rotateY(180deg);
-  }
 
 .card-front,
 .card-back {
@@ -54,8 +53,13 @@ body {
     position: absolute;
 }
 
-.card-inner {
-    transform-style: preserve-3d;
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+
+.card:hover {
+    height: 600px;
+    transition: all 0.5s ease;
 }
 
 .card-front > p {
